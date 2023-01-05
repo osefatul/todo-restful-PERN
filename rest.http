@@ -1,0 +1,33 @@
+### Create new user
+POST http://localhost:5000/todos
+Content-Type: application/json
+
+{
+"desc":"My second postgres query"
+}
+
+
+
+### Get all items
+GET http://localhost:5000/todos
+Content-Type: application/json
+
+
+### Get a specific item
+GET http://localhost:5000/todos/3
+Content-Type: application/json
+
+
+
+### update a specific item
+PUT http://localhost:5000/todos/2
+Content-Type: application/json
+
+{
+    "description": "My second postgres query which is about updated"
+}
+
+
+### delete a specific item
+DELETE http://localhost:5000/todos/3
+Content-Type: application/json
